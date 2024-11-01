@@ -5,7 +5,7 @@ from tkinter import *
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save():
-    with open("data.txt", "w") as data_file:
+    with open("data.txt", "a") as data_file:
         data_file.write(
             f"{website_input.get()} | {email_input.get()} | {password_input.get()}\n"
         )
